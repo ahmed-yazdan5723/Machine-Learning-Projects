@@ -6,7 +6,7 @@ y_train = np.array([300,500])
 
 # Defining the cost function
 def compute_cost(x,y,w,b):
-    m = x_train.shape[0] #Number of training examples
+    m = x.shape[0] #Number of training examples
     cost_sum = 0
     for i in range(m):
         f_wb = w*x[i] + b
